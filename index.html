@@ -8,6 +8,7 @@
         <script src="scripts/mathController.js"></script>
         <script src="scripts/numberController.js"></script>
         <script src="scripts/stringController.js"></script>
+        <script src="scripts/database.js"></script>
         <title>Gestión de salas de concierto</title>
     </head>
     <body>
@@ -26,7 +27,7 @@
             <br>
             <label for="basePrice">Precio base: </label><input id="basePrice" name="basePrice" type="number">
             <br>
-            <label for="discount">Descuento: </label><input id="discount" name="discount" type="number">
+            <label for="discount">Código de escuento: </label><input id="discount" name="discount" type="text">
             <br>
             <label for="soldTickets">Tickets vendidos: </label><input id="soldTickets" name="soldTickets" type="number">
             <br>
@@ -41,7 +42,16 @@
             <label for="requestedTickets">Tickets solicitados: </label><input id="requestedTickets" name="requestedTickets" type="number">
             <br>
             <label for="artistName">Ingresos totales: </label><input id="artistName" name="artistName" type="text">
+            <br>
+            <input type="button" value="Aceptar" onclick="getNewConcert()">
 
         </div>
+
+        <div id="showData">
+
+
+
+        </div>
+
     </body>
 </html>
