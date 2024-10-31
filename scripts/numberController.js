@@ -1,4 +1,4 @@
-function validarTicketsDisponibles(purchasedTickets, maxTickets) {
+function validateAvailableTickets(purchasedTickets, maxTickets) {
   if (purchasedTickets > maxTickets) {
     return false;
   } else {
@@ -6,10 +6,10 @@ function validarTicketsDisponibles(purchasedTickets, maxTickets) {
   }
 }
 
-function calcularIngresoPorAsistente(totalIncome, assistants) {
+function calculateIncomePerAssistant(totalIncome, assistants) {
   return totalIncome / assistants;
 }
 
-function generarIDConcierto(concertDate, basePrize) {
+function generateConcertID(concertDate, basePrize) {
   return concertDate + basePrize;
 }
