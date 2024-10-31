@@ -15,5 +15,5 @@ function calculateIncomePerAssistant(totalIncome, assistants) {
 
 function generateConcertID(concertDate, basePrize) {
   //Genera un ID único para el concierto basandose en el tamaño del array de conciertos.
-return concerts.size +1;
+  return concerts.size + 1;
 }
