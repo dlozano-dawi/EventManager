@@ -18,10 +18,10 @@ function getNewConcert() {
         soldTickets: document.getElementById("soldTickets").value, // Tickets vendidos
         artistPercentage: document.getElementById("artistPercentage").value, // Lo que se lleva el artista
         totalIncome: document.getElementById("totalIncome").value, // Ingresos totales
-        maxTickets: document.getElementById("").value, // Tickets maximos
-        assistans: document.getElementById("").value, // Asistentes
-        purchasedTickets: document.getElementById("").value,
-        artistName: document.getElementById("").value // Nombre artista
+        maxTickets: document.getElementById("maxTickets").value, // Tickets maximos
+        assistans: document.getElementById("assistans").value, // Asistentes
+        requestedTickets: document.getElementById("requestedTickets").value, // requestedTickets
+        artistName: document.getElementById("artistName").value // Nombre artista
     }
 
     concerts.push(concert)
