@@ -11,11 +11,11 @@
         <script src="scripts/database.js"></script>
         <title>Gestión de salas de concierto</title>
     </head>
-    <body>
-
-        <h1>Gestión de salas de concierto</h1>
+    <body style="display: flex; flex-direction: row; justify-content: space-between;">
 
         <div id="incomeData" style="display: flex; justify-content: center; flex-direction: column; width: 400px;">
+
+            <h1>Gestión de salas de concierto</h1>
 
             <label for="concertName">Nombre: </label><input id="concertName" name="concertName" type="text">
             <br>
@@ -35,22 +35,28 @@
             <br>
             <label for="totalIncome">Ingresos totales: </label><input id="totalIncome" name="totalIncome" type="number">
             <br>
-            <label for="maxTickets">Ingresos totales: </label><input id="maxTickets" name="maxTickets" type="number">
+            <label for="maxTickets">Tickets totales: </label><input id="maxTickets" name="maxTickets" type="number">
             <br>
-            <label for="assistans">Ingresos totales: </label><input id="assistans" name="assistans" type="number">
+            <label for="assistans">Asistentes: </label><input id="assistans" name="assistans" type="number">
             <br>
             <label for="requestedTickets">Tickets solicitados: </label><input id="requestedTickets" name="requestedTickets" type="number">
             <br>
-            <label for="artistName">Ingresos totales: </label><input id="artistName" name="artistName" type="text">
+            <label for="artistName">Artista: </label><input id="artistName" name="artistName" type="text">
             <br>
-            <input type="button" value="Aceptar" onclick="getNewConcert()">
+            <input type="button" value="Crear concierto nuevo" onclick="getNewConcert()">
 
         </div>
 
         <div id="showData">
 
+            <h2>Conciertos</h2>
 
+            <input type="button" value="Mostrar todos los conciertos" onclick="showConcerts()">
+            <br><br>
+            <input type="button" value="Mostrar el concierto: " onclick="showConcert()">
+            <input type="text" id="searchConcert" name="searchConcert" placeholder="Buscar concierto">
 
+            <div id="showConcerts"></div>
         </div>
 
     </body>

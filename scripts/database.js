@@ -26,4 +26,6 @@ function getNewConcert() {
     }
 
     concerts.push(concert)
+
+    console.log(concerts);
 }
