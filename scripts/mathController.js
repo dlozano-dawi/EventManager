@@ -1,6 +1,6 @@
-function calculateDiscountPrize(basePrize, discount) {
+function calculatefinalTicketPrize(basePrize, discount) {
   //Calcula el precio del ticket después de aplicar un descuento para promociones especiales (porcentaje entre 5% y 30%).
-  return basePrize - (basePrize * discount) / 100;
+  return basePrize - (basePrize * applyDiscount (discount)) / 100;
 }
 
 function calculateExpectedIncome(ticketPrize, soldTickets) {
