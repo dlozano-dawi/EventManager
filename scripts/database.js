@@ -14,7 +14,7 @@ function getNewConcert() {
         validatedName: formatConcertName(document.getElementById("concertName").value), // nombre de concierto formateado - (Lo gestiona Oscar, no te rayes Dani) 
         basePrice: document.getElementById("basePrice").value, // Precio base
         discount: document.getElementById("discount").value, // Descuento
-        ticketPrice: "", // Precio ticket (Será calculado posteriormente)
+        ticketPrice: calculatefinalTicketPrize( document.getElementById("basePrice").value, document.getElementById("discount").value) , // Precio ticket MARC
         soldTickets: document.getElementById("soldTickets").value, // Tickets vendidos
         artistPercentage: document.getElementById("artistPercentage").value, // Lo que se lleva el artista
         totalIncome: document.getElementById("totalIncome").value, // Ingresos totales
@@ -24,6 +24,10 @@ function getNewConcert() {
         artistName: document.getElementById("artistName").value, // Nombre artista
         id: generateConcertID() // ID para el concierto
     }
+
+    console.log(
+        getSeason(document.getElementById("concertDate").value)
+    )   
 
     concerts.push(concert)
 
