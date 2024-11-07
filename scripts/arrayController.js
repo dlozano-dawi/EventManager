@@ -56,13 +56,15 @@ function showConcert(){
             "ID: " + concerts[i].id + "</div>"
             +"<br>";
 
+            modifyConcert(concerts[i].id);
+
 }
 
-function modifyConcert(){
+function modifyConcert(id){
 
     document.getElementById("showConcerts").innerHTML = "";
 
-    let concertID = 0;
+    let concertID = id;
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
