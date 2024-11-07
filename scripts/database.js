@@ -26,7 +26,8 @@ function getNewConcert() {
             formatConcertName(document.getElementById("concertName").value),
             document.getElementById("artistName").value,
             document.getElementById("concertDate").value
-        ) // Descripcion del evento
+        ), // Descripcion del evento
+        season: document.getElementById("concertDate").value
     }
 
     concerts.push(concert)

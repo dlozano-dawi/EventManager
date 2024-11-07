@@ -73,7 +73,7 @@ function modifyConcert(id){
         "<br><br>" +
         "<label for='discountCode'>Código de descuento: </label>" +
         "<input type='number' id='discountCode' name='discountCode'>" +
-        ""; 
+        "";
 
 
 }
