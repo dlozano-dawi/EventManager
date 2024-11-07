@@ -6,7 +6,8 @@ function showConcerts(){
         
         document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
-            "Concierto: " + concerts[i].name + "<br>" + 
+            "Concierto: " + concerts[i].validatedName + "<br>" + 
+            "Descripción: " +concerts[i].description + "<br>" +
             "Fecha: " + concerts[i].date + "<br>" + 
             "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
@@ -37,7 +38,8 @@ function showConcert(){
 
     document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
-            "Concierto: " + concerts[i].validatedName + "<br>" + 
+            "Concierto: " + concerts[i].valitedName + "<br>" + 
+            "Descripción: " +concerts[i].description + "<br>" +
             "Fecha: " + concerts[i].date + "<br>" + 
             "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +

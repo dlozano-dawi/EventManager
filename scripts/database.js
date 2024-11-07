@@ -22,7 +22,8 @@ function getNewConcert() {
         assistans: document.getElementById("assistans").value, // Asistentes
         requestedTickets: document.getElementById("requestedTickets").value, // requestedTickets
         artistName: document.getElementById("artistName").value, // Nombre artista
-        id: generateConcertID() // ID para el concierto
+        id: generateConcertID(), //ID para el concierto
+        description: createEventDescription(validatedName, artistName, date) // Descripcion del evento
     }
 
     concerts.push(concert)
