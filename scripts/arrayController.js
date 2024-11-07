@@ -66,7 +66,7 @@ function modifyConcert(id){
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
-        "<button value onclick='buyTickets()' >Comprar entradas</button>" +
+        "<button value onclick='buyTickets(" + concertID  + ")' >Comprar entradas</button>" +
         "<br>"+
         "<label for='ticketAmount'>Cantidad de entradas: </label>" +
         "<input type='number' id='ticketAmount' name='ticketAmount'>" +
