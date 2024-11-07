@@ -37,7 +37,7 @@ function showConcert(){
 
     document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
-            "Concierto: " + concerts[i].name + "<br>" + 
+            "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Fecha: " + concerts[i].date + "<br>" + 
             "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
@@ -53,5 +53,21 @@ function showConcert(){
             "Nombre artista: " + concerts[i].artistName + "<br>" +
             "ID: " + concerts[i].id + "</div>"
             +"<br>";
+
+}
+
+function modifyConcert(){
+
+    document.getElementById("showConcerts").innerHTML = "";
+
+    let concertID = 0;
+    
+    document.getElementById("showConcerts").innerHTML +=
+        "<br><br>" +
+        "<button value onclick >Comprar entradas</button>" +
+        "<input type='number' id='ticketAmount' name='ticketAmount'>" +
+        "<br><br>" +
+        "<button onclick=''></button>";
+
 
 }
