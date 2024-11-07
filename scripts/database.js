@@ -21,8 +21,11 @@ function getNewConcert() {
         maxTickets: document.getElementById("maxTickets").value, // Tickets maximos
         assistans: document.getElementById("assistans").value, // Asistentes
         requestedTickets: document.getElementById("requestedTickets").value, // requestedTickets
-        artistName: document.getElementById("artistName").value // Nombre artista
+        artistName: document.getElementById("artistName").value, // Nombre artista
+        id: generateConcertID() // ID para el concierto
     }
 
     concerts.push(concert)
+
+    console.log(concerts);
 }

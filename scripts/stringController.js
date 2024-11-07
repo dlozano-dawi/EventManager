@@ -14,4 +14,17 @@ function validateArtistName(artistName) {
     return artistName.trim();
 }
 
-console.log(formatConcertName("the rolling stones"));
+function applyDiscount (discount) {
+    switch (discount) {
+        case "SUMMER10":
+            return 0.9;
+        case "FALL15":
+            return 0.85;
+        case "WINTER20":
+            return 0.9;
+        case "SPRING15":
+            return 0.85;
+        default:
+            return 1;
+    }
+}
