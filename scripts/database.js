@@ -25,10 +25,6 @@ function getNewConcert() {
         id: generateConcertID() // ID para el concierto
     }
 
-    console.log(
-        getSeason(document.getElementById("concertDate").value)
-    )   
-
     concerts.push(concert)
 
     console.log(concerts);
