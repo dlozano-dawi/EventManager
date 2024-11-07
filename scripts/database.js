@@ -14,7 +14,7 @@ function getNewConcert() {
         validatedName: formatConcertName(document.getElementById("concertName").value), // nombre de concierto formateado - (Lo gestiona Oscar, no te rayes Dani) 
         basePrice: document.getElementById("basePrice").value, // Precio base
         discount: "", // Descuento
-        ticketPrice: calculatefinalTicketPrize( document.getElementById("basePrice").value, document.getElementById("discount").value) , // Precio ticket MARC
+        ticketPrice: calculatefinalTicketPrize( document.getElementById("basePrice").value) , // Precio ticket MARC
         soldTickets: document.getElementById("soldTickets").value, // Tickets vendidos
         artistPercentage: document.getElementById("artistPercentage").value, // Lo que se lleva el artista
         totalIncome: "", // Ingresos totales
