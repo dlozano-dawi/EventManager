@@ -62,16 +62,18 @@ function showConcert(){
 
 function modifyConcert(id){
 
-    document.getElementById("showConcerts").innerHTML = "";
-
     let concertID = id;
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
         "<button value onclick >Comprar entradas</button>" +
+        "<br>"+
+        "<label for='ticketAmount'>Cantidad de entradas: </label>" +
         "<input type='number' id='ticketAmount' name='ticketAmount'>" +
         "<br><br>" +
-        "<button onclick=''></button>";
+        "<label for='discountCode'>Código de descuento: </label>" +
+        "<input type='number' id='discountCode' name='discountCode'>" +
+        ""; 
 
 
 }
