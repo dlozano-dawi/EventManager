@@ -47,7 +47,7 @@
 
             <input type="button" value="Mostrar todos los conciertos" onclick="showConcerts()">
             <br><br>
-            <input type="button" value="Mostrar el concierto: " onclick="showConcert()">
+            <input type="button" value="Mostrar el concierto: " onclick="showConcert(),modifyConcert(concerts[i].id)">
             <input type="text" id="searchConcert" name="searchConcert" placeholder="Buscar concierto">
 
             <div id="showConcerts"></div>

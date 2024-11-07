@@ -21,8 +21,9 @@ function showConcerts(){
             "Asistentes: " + concerts[i].assistans + "<br>" +
             "Tickets solicitados: " + concerts[i].requestedTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
-            "ID: " + concerts[i].id + "</div>"
-            +"<br>";
+            "ID: " + concerts[i].id + "</div>" + 
+            "Estacion: " + concerts[i].season +  
+            "<br>";
             
 
     }
@@ -53,10 +54,10 @@ function showConcert(){
             "Asistentes: " + concerts[i].assistans + "<br>" +
             "Tickets solicitados: " + concerts[i].requestedTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
-            "ID: " + concerts[i].id + "</div>"
-            +"<br>";
+            "ID: " + concerts[i].id + "</div>" +
+            "Estacion: " + concerts[i].season + 
+            "<br>";
 
-            modifyConcert(concerts[i].id);
 
 }
 
