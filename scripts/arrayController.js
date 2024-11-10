@@ -39,7 +39,7 @@ function showConcert(){
 
     document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
-            "Concierto: " + concerts[i].valitedName + "<br>" + 
+            "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
             "Fecha: " + concerts[i].date + "<br>" + 
             "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
@@ -58,6 +58,7 @@ function showConcert(){
             "Estacion: " + concerts[i].season + 
             "<br>";
 
+    modifyConcert(i);
 
 }
 
