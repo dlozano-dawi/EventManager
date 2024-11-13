@@ -23,6 +23,8 @@ function buyTickets(id) {
   console.log(id)
   let tickets = document.getElementById("ticketAmount").value
   let discount = document.getElementById("discountCode").value
+
+  // TODO checkear si quedan entradas
   concerts[id].soldTickets = tickets
   total = getPrice(id, tickets, discount)
   concerts[id].totalIncome = total
