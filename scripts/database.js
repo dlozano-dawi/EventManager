@@ -20,7 +20,6 @@ function getNewConcert() {
         artistPercentage: document.getElementById("artistPercentage").value, // Lo que se lleva el artista
         totalIncome: "", // Ingresos totales
         maxTickets: document.getElementById("maxTickets").value, // Tickets maximos
-        assistans: document.getElementById("assistans").value, // Asistentes
         ticketsForSell: "", //hay que calcular tickets totales - tickets vendidos
         artistName: document.getElementById("artistName").value, // Nombre artista
         id: generateConcertID(), //ID para el concierto

@@ -23,20 +23,24 @@ function buyTickets(id) {
   console.log(id)
   let tickets = document.getElementById("ticketAmount").value
   let discount = document.getElementById("discountCode").value
-
-  // TODO checkear si quedan entradas
-  concerts[id].soldTickets = tickets
-  total = getPrice(id, tickets, discount)
-  concerts[id].totalIncome = total
+  let output = ""
   
-  let output = "La cantidad a pagar es: " + total
+  // TODO checkear si quedan entradas
+  if (+concerts[id].soldTickets + tickets <= concerts[id].maxTickets) {
+    concerts[id].soldTickets = tickets;
+    total = getPrice(id, tickets, discount);
+    concerts[id].totalIncome = total;
+    output = "La cantidad a pagar es: " + total;
+  } else {
+    output = "No nos quedan tantos tickets";
+  }
 
   showConcert()
   modifyConcert()
-
+  
   document.getElementById("showConcerts").innerHTML += 
     "<br><br>" +
-    output
+    output;
 }
 
 function getPrice(id, tickets, discount) {
