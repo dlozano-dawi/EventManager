@@ -27,7 +27,7 @@ function buyTickets(id) {
   
   // TODO checkear si quedan entradas
   if (+concerts[id].soldTickets + tickets <= concerts[id].maxTickets) {
-    concerts[id].soldTickets = concerts[id].soldTickets + tickets;
+    concerts[id].soldTickets = (concerts[id].soldTickets  * 1)+ tickets;
     total = getPrice(id, tickets, discount);
     concerts[id].totalIncome = concerts[id].totalIncome + total;
     output = "La cantidad a pagar es: " + total;

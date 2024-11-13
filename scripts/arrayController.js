@@ -40,7 +40,7 @@ function showConcert(){
             "<div class='concert"+ (i+1) +"'>" + 
             "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
-            "Fecha: " + concerts[i].formatedDate + "<br>" + 
+            "Fecha: " + concerts[i].date + "<br>" + 
             "Días de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de aviso: " + concerts[i].dateAdvise + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
@@ -48,7 +48,8 @@ function showConcert(){
             "Tickets vendidos: " + concerts[i].soldTickets + "<br>" +
             "Porcentaje artista: " + concerts[i].artistPercentage + "<br>" +
             "Ingresos totales: " + concerts[i].totalIncome + "<br>" +
-            "Tickets maximos: " + concerts[i].maxTickets + "<br>" +
+            "Tickets restantes: " + concerts[i].maxTickets - concerts[i].soldTickets + "<br>" +
+            "Asistentes Maximos: " + concerts[i].maxTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
