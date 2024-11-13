@@ -36,6 +36,9 @@ function showConcert(){
 
     let i = document.getElementById("searchConcert").value - 1;
 
+    let organizationGanancies = (Number(concerts[i].totalIncome) - (Number(concerts[i].totalIncome) * (Number(concerts[i].artistPercentage) / 100)));
+    let artistGanancies = (Number(concerts[i].totalIncome) * (Number(concerts[i].artistPercentage) / 100));
+
     document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
             "Concierto: " + concerts[i].validatedName + "<br>" + 
@@ -51,8 +54,8 @@ function showConcert(){
             "Tickets restantes: " + (concerts[i].maxTickets - concerts[i].soldTickets) + "<br>" +
             "Asistentes Maximos: " + concerts[i].maxTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
-            "Ganancias artista: " + (Number(concerts[i].totalIncome) * Number(concerts[i].artistPercentage)) + "<br>" +
-            "Ganancias organización: " + (Number(concerts[i].totalIncome) - (Number(concerts[i].totalIncome) * Number(concerts[i].artistPercentage))) + "<br>" +
+            "Ganancias artista: " + artistGanancies.toFixed(2) + "<br>" +
+            "Ganancias organización: " + (organizationGanancies < 0 ? 0 : organizationGanancies).toFixed(2) + "<br>" +
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
             "<br>";
