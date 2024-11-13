@@ -37,7 +37,7 @@ function formatDate(date) {
 
     // Check if date is valid
     if (isNaN(date)) {
-        // throw new Error("Invalid date");
+        throw new Error("Invalid date");
     }
 
     const day = String(date.getDate()).padStart(2, '0');
