@@ -51,7 +51,7 @@ function getPrice(id, tickets, discount) {
     case "SPRING15":
       discountAplicated = 0.85;
       break;
-    case "AUTUMN10":
+    case "FALL10":
       discountAplicated = 0.9;
       break;
     default:
