@@ -1,6 +1,14 @@
 function makeReminder(date, days) {
+
+    console.log(date);
+    console.log(days);
+
     let formatedDate = date.toString().split("-").reverse().join("-");
-    
+
+    console.log(formatedDate);
+    console.log(Date.parse(formatedDate));
+    console.log(subtractTimeFromDate(Date.parse(formatedDate), days));
+
     return subtractTimeFromDate(Date.parse(formatedDate), days);
 }
 
