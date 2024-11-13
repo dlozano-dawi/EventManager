@@ -48,7 +48,7 @@ function showConcert(){
             "Tickets vendidos: " + concerts[i].soldTickets + "<br>" +
             "Porcentaje artista: " + concerts[i].artistPercentage + "<br>" +
             "Ingresos totales: " + concerts[i].totalIncome + "<br>" +
-            "Tickets restantes: " + concerts[i].maxTickets - concerts[i].soldTickets + "<br>" +
+            "Tickets restantes: " + (concerts[i].maxTickets - concerts[i].soldTickets) + "<br>" +
             "Asistentes Maximos: " + concerts[i].maxTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
             "ID: " + concerts[i].id + "</div>" +
