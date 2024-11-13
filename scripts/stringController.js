@@ -6,8 +6,8 @@ function formatConcertName(name) {
     .join(" "); //Join the array back into a string
 }
 
-function createEventDescription(validatedName, artistName, date) {
-    return `Come see ${artistName} perform at ${validatedName} on ${date}.`;
+function createEventDescription(validatedName, artistName, formatedDate) {
+    return `Ven a ver actuar a ${artistName} en ${validatedName} el próximo ${formatedDate}.`;
 }
 
 function validateArtistName(artistName) {
