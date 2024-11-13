@@ -8,7 +8,7 @@ function showConcerts(){
             "<div class='concert"+ (i+1) +"'>" + 
             "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
-            "Fecha: " + concerts[i].date + "<br>" + 
+            "Fecha: " + concerts[i].formatedDate + "<br>" + 
             "Días de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de aviso: " + concerts[i].dateAdvise + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
@@ -25,8 +25,6 @@ function showConcerts(){
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
             "<br>";
-            
-
     }
     
 
@@ -59,24 +57,21 @@ function showConcert(){
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
             "<br>";
-
-    modifyConcert(i);
-
 }
 
-function modifyConcert(id){
+function modifyConcert(){
 
-    let concertID = id;
+    let concertID =  document.getElementById("searchConcert").value - 1;
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
-        "<button value onclick='buyTickets(" + concertID  + ")' >Comprar entradas</button>" +
-        "<br>"+
         "<label for='ticketAmount'>Cantidad de entradas: </label>" +
         "<input type='number' id='ticketAmount' name='ticketAmount'>" +
         "<br><br>" +
         "<label for='discountCode'>Código de descuento: </label>" +
-        "<input type='number' id='discountCode' name='discountCode'>" +
+        "<input type='string' id='discountCode' name='discountCode'>" +
+        "<br><br>"+
+        "<button value onclick='buyTickets(" + concertID  + ")' >Vender entradas</button>" +
         "";
 
 }

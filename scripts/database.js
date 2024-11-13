@@ -7,7 +7,8 @@ let concerts = new Array();
 // Funcion que cogera los inputs y los metera en nuestra lista de conciertos como un objeto nuevo
 function getNewConcert() {
     let concert = {
-        date: document.getElementById("concertDate").value, // fechaConcierto
+        date: document.getElementById("concertDate").value,
+        formatedDate: formatDate(document.getElementById("concertDate").value), // fechaConcierto
         daysBefore: document.getElementById("daysBefore").value, // dias de antelacion
         dateAdvise: makeReminder(document.getElementById("concertDate").value, document.getElementById("daysBefore").value), // fecha de aviso, calculando fecha del concierto con los dias de preaviso
         sellingDate: document.getElementById("saleDate").value, // fecha de venta
@@ -27,7 +28,7 @@ function getNewConcert() {
         description: createEventDescription(
             formatConcertName(document.getElementById("concertName").value),
             document.getElementById("artistName").value,
-            document.getElementById("concertDate").value
+            formatDate(document.getElementById("concertDate").value)
         ), // Descripcion del evento
         season: getSeason(document.getElementById("concertDate").value)
     }
