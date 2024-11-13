@@ -9,7 +9,8 @@ function showConcerts(){
             "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
             "Fecha: " + concerts[i].date + "<br>" + 
-            "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
+            "Días de antelación: " + concerts[i].daysBefore + "<br>" +
+            "Fecha de aviso: " + concerts[i].dateAdvise + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
             "Precio base: " + concerts[i].basePrice + "<br>" +
             "Descuento: " + concerts[i].discount + "<br>" +
@@ -21,8 +22,9 @@ function showConcerts(){
             "Asistentes: " + concerts[i].assistans + "<br>" +
             "Tickets solicitados: " + concerts[i].requestedTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
-            "ID: " + concerts[i].id + "</div>"
-            +"<br>";
+            "ID: " + concerts[i].id + "</div>" +
+            "Estacion: " + concerts[i].season + 
+            "<br>";
             
 
     }
@@ -38,10 +40,11 @@ function showConcert(){
 
     document.getElementById("showConcerts").innerHTML +=
             "<div class='concert"+ (i+1) +"'>" + 
-            "Concierto: " + concerts[i].valitedName + "<br>" + 
+            "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
             "Fecha: " + concerts[i].date + "<br>" + 
-            "Dias de antelación: " + concerts[i].daysBefore + "<br>" +
+            "Días de antelación: " + concerts[i].daysBefore + "<br>" +
+            "Fecha de aviso: " + concerts[i].dateAdvise + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
             "Precio base: " + concerts[i].basePrice + "<br>" +
             "Descuento: " + concerts[i].discount + "<br>" +
@@ -53,10 +56,11 @@ function showConcert(){
             "Asistentes: " + concerts[i].assistans + "<br>" +
             "Tickets solicitados: " + concerts[i].requestedTickets + "<br>" +
             "Nombre artista: " + concerts[i].artistName + "<br>" +
-            "ID: " + concerts[i].id + "</div>"
-            +"<br>";
+            "ID: " + concerts[i].id + "</div>" +
+            "Estacion: " + concerts[i].season + 
+            "<br>";
 
-            modifyConcert(concerts[i].id);
+    modifyConcert(i);
 
 }
 
@@ -73,7 +77,6 @@ function modifyConcert(id){
         "<br><br>" +
         "<label for='discountCode'>Código de descuento: </label>" +
         "<input type='number' id='discountCode' name='discountCode'>" +
-        ""; 
-
+        "";
 
 }
