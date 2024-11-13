@@ -10,7 +10,7 @@ function getNewConcert() {
         date: document.getElementById("concertDate").value,
         formatedDate: formatDate(document.getElementById("concertDate").value), // fechaConcierto
         daysBefore: document.getElementById("daysBefore").value, // dias de antelacion
-        dateAdvise: makeReminder(document.getElementById("concertDate").value, document.getElementById("daysBefore").value), // fecha de aviso, calculando fecha del concierto con los dias de preaviso
+        dateAdvise: formatDate(makeReminder(document.getElementById("concertDate").value, document.getElementById("daysBefore").value)), // fecha de aviso, calculando fecha del concierto con los dias de preaviso
         sellingDate: document.getElementById("saleDate").value, // fecha de venta
         daysSellsBeforeStart: calculateAntelation(document.getElementById("concertDate").value, document.getElementById("saleDate").value), // dias de venta antes del concierto
         name: document.getElementById("concertName").value, // nombre de concierto

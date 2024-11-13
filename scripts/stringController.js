@@ -13,18 +13,3 @@ function createEventDescription(validatedName, artistName, formatedDate) {
 function validateArtistName(artistName) {
     return artistName.trim();
 }
-
-function applyDiscount (discount) {
-    switch (discount) {
-        case "SUMMER10":
-            return 0.9;
-        case "FALL15":
-            return 0.85;
-        case "WINTER20":
-            return 0.9;
-        case "SPRING15":
-            return 0.85;
-        default:
-            return 1;
-    }
-}

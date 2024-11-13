@@ -1,15 +1,6 @@
 function makeReminder(date, days) {
-
-    console.log(date);
-    console.log(days);
-
-    let formatedDate = date.toString().split("-").reverse().join("-");
-
-    console.log(formatedDate);
-    console.log(Date.parse(formatedDate));
-    console.log(subtractTimeFromDate(Date.parse(formatedDate), days));
-
-    return subtractTimeFromDate(Date.parse(formatedDate), days);
+    let dateObj = new Date(date); // Accepts YYYY-MM-DD format directly
+    return subtractTimeFromDate(dateObj.getTime(), days);
 }
 
 function subtractTimeFromDate(date, days) {
