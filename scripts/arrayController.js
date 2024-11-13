@@ -40,7 +40,7 @@ function showConcert(){
             "<div class='concert"+ (i+1) +"'>" + 
             "Concierto: " + concerts[i].validatedName + "<br>" + 
             "Descripción: " +concerts[i].description + "<br>" +
-            "Fecha: " + concerts[i].date + "<br>" + 
+            "Fecha: " + concerts[i].formatedDate + "<br>" + 
             "Días de antelación: " + concerts[i].daysBefore + "<br>" +
             "Fecha de aviso: " + concerts[i].dateAdvise + "<br>" +
             "Fecha de venta: " + concerts[i].sellingDate + "<br>" +
