@@ -25,8 +25,6 @@ function showConcerts(){
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
             "<br>";
-            
-
     }
     
 
@@ -59,14 +57,11 @@ function showConcert(){
             "ID: " + concerts[i].id + "</div>" +
             "Estacion: " + concerts[i].season + 
             "<br>";
-
-    modifyConcert(i);
-
 }
 
-function modifyConcert(id){
+function modifyConcert(){
 
-    let concertID = id;
+    let concertID =  document.getElementById("searchConcert").value - 1;
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
