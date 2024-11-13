@@ -17,3 +17,11 @@ function generateConcertID() {
   //Genera un ID único para el concierto basandose en el tamaño del array de conciertos.
   return concerts.length + 1;
 }
+
+
+function buyTickets(id) {
+  console.log(id)
+  let tickets = document.getElementById("ticketAmount").value
+  let discount = document.getElementById("discountCode").value
+  concerts[id].buyTickets = tickets
+}
