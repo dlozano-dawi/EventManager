@@ -7,7 +7,7 @@ function formatConcertName(name) {
 }
 
 function createEventDescription(validatedName, artistName, date) {
-    return `Come see ${artistName} perform at ${validatedName} on ${date}.`;
+    return `Ven a ver actuar a ${artistName} en ${validatedName} el próximo ${date}.`;
 }
 
 function validateArtistName(artistName) {
