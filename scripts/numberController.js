@@ -23,5 +23,8 @@ function buyTickets(id) {
   console.log(id)
   let tickets = document.getElementById("ticketAmount").value
   let discount = document.getElementById("discountCode").value
-  concerts[id].buyTickets = tickets
+  concerts[id].soldTickets = tickets
+  showConcert()
+  modifyConcert()
 }
+

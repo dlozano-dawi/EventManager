@@ -65,13 +65,13 @@ function modifyConcert(){
     
     document.getElementById("showConcerts").innerHTML +=
         "<br><br>" +
-        "<button value onclick='buyTickets(" + concertID  + ")' >Comprar entradas</button>" +
-        "<br>"+
         "<label for='ticketAmount'>Cantidad de entradas: </label>" +
         "<input type='number' id='ticketAmount' name='ticketAmount'>" +
         "<br><br>" +
         "<label for='discountCode'>Código de descuento: </label>" +
-        "<input type='number' id='discountCode' name='discountCode'>" +
+        "<input type='string' id='discountCode' name='discountCode'>" +
+        "<br><br>"+
+        "<button value onclick='buyTickets(" + concertID  + ")' >Vender entradas</button>" +
         "";
 
 }
