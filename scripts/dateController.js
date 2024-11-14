@@ -25,7 +25,6 @@ function getSeason(date) {
 }
 
 function calculateAntelation(concertDate, sellingDate) {
-    // TODO
     var diff = Date.parse(concertDate) - Date.parse(sellingDate);
     return `Tendrás que hacer el recordatorio ${diff/(1000*60*60*24)} días antes`
 }
